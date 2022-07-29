@@ -1,0 +1,466 @@
+/* POPPINS FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F8F8FA;
+}
+
+.container {
+  margin: 0 5%;
+}
+
+h1, h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Header */
+
+header {
+  background-color: #4617FE;
+  padding-top: 2%;
+  position: relative;
+  height: 80vh;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .nav-item {
+  margin: 0 20px;
+  color: #ffffff;
+}
+
+nav .active {
+  background-color: #ffffff;
+  color: #4617FE;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+nav svg {
+  height: 20px;
+  width: 20px;
+}
+
+/* Logo */
+
+header .logo {
+  cursor: pointer;
+  display: block;
+}
+
+/* Header-Image */
+
+header .header-image {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 80vh;
+}
+
+/* Header-Text */
+
+header .header-text {
+  margin-top: 8%;
+  color: #ffffff;
+}
+
+header .header-text h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+header .header-text p {
+  margin-top: 2%;
+  font-size: 1.5rem;
+}
+
+/* Companies */
+
+.companies {
+  display: flex;
+  margin: 3% 0 7%;
+}
+
+.companies .company-items {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Righteous', cursive;
+  margin-right: 10%;
+}
+
+/* API */
+
+.api .cards {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.api .card-active {
+  background-color: #ffffff;
+  height: 300px;
+  padding: 55px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 14px -10px #000;
+}
+
+.api .card-active .card-head-active {
+  color: #5A31FC;
+}
+
+.api .cards .card {
+  height: 300px;
+  padding: 55px 30px;
+  border-radius: 20px;
+  transition: .2s ease-in-out;
+}
+
+.api .cards .card:hover{
+  box-shadow: 0 0 14px -10px #000;
+  background-color: #ffffff;
+  transform: translateY(-1%);
+}
+
+.api .cards .card .logo-purple{
+  display: none;
+}
+
+.api .cards .card:hover .logo-purple{
+  display: block;
+}
+
+.api .cards .card:hover .logo-black{
+  display: none;
+}
+
+.api .cards .card .logo-black{
+  display: block;
+}
+
+.card:hover .card-head{
+  color: #5A31FC;
+}
+
+.api .card-head, .api .card-head-active{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.api .card-body {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.api .circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #5A31FC;
+  transition: .2s ease-in-out;
+}
+
+.api .circle:hover{
+  transform: translateY(-5%);
+}
+
+.api .circle .right{
+  text-align: center;
+  font-size: 2rem;
+  color: #F8F8FA;
+}
+
+/* Blog */
+
+.blog-cards{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blog-card{
+  border-radius: 50px 10px 10px 10px ;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  width: 35%;
+  box-shadow: 0 0 10px -5px #000000;
+}
+
+.blog-image img{
+  display: flex;
+}
+
+.blog-content{
+  padding: 5% 7%;
+}
+
+.blog-content h6{
+  color: #5A31FC;
+  font-weight: 800;
+  margin-bottom: 5%;
+}
+
+.blog-content h3{
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+}
+
+.blog-content small{
+  font-size: .8rem;
+}
+
+.blog-bottom{
+  display: flex;
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+}
+
+.blog-card-bottom-image{
+  filter: drop-shadow(2px 2px 0 #ffffff)
+        drop-shadow(-2px 2px 0 #ffffff)
+        drop-shadow(2px -2px 0 #ffffff)
+        drop-shadow(-2px -2px 0 #ffffff);
+        margin-right: 15px;
+}
+
+/* FAQ SECTION */
+
+.faq-section{
+  margin-top: 5%;
+  background-image: url('./images/Rectangle_38-2\ \(1\).png');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+  background-color: #E9EDFF;
+  /* height: 468px; */
+  position: relative;
+}
+
+.faq-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4% 0;
+}
+
+.faq-content h4{
+  margin-top: 1%;
+  font-weight: 400;
+}
+
+.faq-content .question{
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 2%;
+}
+
+.faq-content button{
+  margin-top: 2%;
+  background-color: #4617FE;
+  border: none;
+  color: #E9EDFF;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.faq-image{
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50vh;
+}
+
+/* Download Now */
+
+.container-2{
+  margin: 0 5%;
+  position: relative;
+}
+
+.download-section{
+  background-color: #ffffff;
+}
+
+.download-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6% 0;
+}
+
+.download-content h1{
+  font-size: 2rem;
+}
+
+.download-content span{
+  font-weight: 400;
+}
+
+.download-email input{
+  background-color: #E9EDFF;
+  border: none;
+  border-radius: 35px;
+  width: 600px;
+  font-size: 1rem;
+  padding: 17px 0 17px 30px;
+  display: flex;
+}
+
+.download-email input::placeholder{
+  color: #000000;
+}
+
+.download-email button{
+  position: absolute;
+  bottom: 40.5%;
+  background-color: #4617FE;
+  color: #ffffff;
+  right: 0.5%;
+  padding: 15px 50px;
+  border-radius: 35px;
+  border: none;
+}
+
+/* footer-section */
+
+.footer-section{
+  background-color: #4617FE;
+  padding: 5% 0;
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-left .footer-logo, .footer-logo-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+
+.footer-left .list, .footer-right .logos-list{
+  list-style: none;
+}
+
+.footer-left .list-items, .footer-right .list-items{
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.footer-left .list-items{
+  padding-right: 30px;
+}
+
+.footer-right .list-items{
+  padding-left: 30px;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-logos{
+  padding-left: 25px;
+}
+
+/* Pseudo Classes */
+
+.apis{
+  position: relative;
+}
+
+
+.apis:before{
+  content: "";
+  height: 15px;
+  position: absolute;
+  left: -28%;
+  top: 20%;
+  background-color: #ffffff;
+  width: 1px;
+  display: block;
+}
+
+.apis:after{
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: 23%;
+  top: 20%;
+  background-color: #ffffff;
+  width: 1px;
+  display: block;
+}
+
+.blogs{
+  position: relative;
+}
+
+.blogs:after{
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: 23%;
+  top: 20%;
+  background-color: #ffffff;
+  width: 1px;
+  display: block;
+}
+
+.business{
+  position: relative;
+}
+
+.business:before{
+  content: "";
+  height: 15px;
+  position: absolute;
+  left: 13%;
+  top: 20%;
+  background-color: #ffffff;
+  width: 1px;
+  display: block;
+}
+
+.business:after{
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: -17%;
+  top: 20%;
+  background-color: #ffffff;
+  width: 1px;
+  display: block;
+}
