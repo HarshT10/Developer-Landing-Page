@@ -2,7 +2,7 @@
 
 - This project is a landing page for web developers. 
 
-[Netlify](https://62e388f555f80350d0354845--creative-dragon-b332a6.netlify.app/)
+[Netlify](https://developer-landing-page-harshthakkar1011.netlify.app/)
 
 ![Badge](https://img.shields.io/badge/Netlify-Link-green)
 
