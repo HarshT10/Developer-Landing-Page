@@ -243,8 +243,8 @@ header .header-text p {
   margin-bottom: 5%;
 }
 
-.blog-content small {
-  font-size: .8rem;
+.blog-content p {
+  font-size: .9rem;
 }
 
 .blog-bottom {
@@ -408,7 +408,6 @@ form {
   position: relative;
 }
 
-
 .apis:before {
   content: "";
   height: 15px;
@@ -535,6 +534,10 @@ form {
     height: 350px;
   }
 
+  .blog-content p {
+    font-size: .8rem;
+  }
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -592,6 +595,19 @@ form {
 
   /* Blog */
 
+  .blog-cards{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .blog-card{
+    width: 70%;
+  }
+
+  .blog-content p {
+    font-size: 1rem;
+  }
+
   .blog-bottom {
     left: 55%;
   }
@@ -602,7 +618,7 @@ form {
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1390px) {
 
   h1,
   h2 {
@@ -625,17 +641,25 @@ form {
   /* Header-Text */
 
   header .header-text h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   header .header-text p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   /* Companies */
 
   .companies .company-items {
     margin-right: 6%;
+  }
+
+  .companies .company-items {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Righteous', cursive;
+    margin-right: 5%;
   }
 
   /* API */
@@ -657,14 +681,34 @@ form {
 
   /* Blog */
 
+  .blog-cards{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .blog-card{
+    width: 60%;
+  }
+
   .blog-bottom {
     left: 55%;
+  }
+
+  .blog-content p {
+    font-size: .8rem;
   }
 
   .blog-content .blog-author {
     font-size: .9rem;
   }
 
+}
+
+@media only screen and (max-width: 1290px) {
+
+  header .header-image {
+    height: 65vh;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -747,6 +791,11 @@ form {
   .blog-cards {
     flex-direction: column;
     gap: 50px;
+  }
+
+  
+  .blog-content p {
+    font-size: .7rem;
   }
 
   .blog-card {
@@ -844,7 +893,7 @@ form {
     font-size: 1rem;
   }
 
-  .blog-content small {
+  .blog-content p {
     font-size: .7rem;
   }
 
@@ -1039,6 +1088,11 @@ form {
   .blog-card {
     width: 100%;
   }
+
+  .blog-content p {
+    font-size: .6rem;
+  }
+
 
   .blog-card-bottom-image {
     filter: drop-shadow(2px 2px 0 #ffffff) drop-shadow(-2px 2px 0 #ffffff) drop-shadow(2px -2px 0 #ffffff) drop-shadow(-2px -2px 0 #ffffff);
@@ -1246,14 +1300,11 @@ form {
 
   .blog-content h3 {
     font-size: .6rem;
-    margin-bottom: 0;
+    margin-bottom: 5%;
   }
   
-  .blog-content small {
-    margin-bottom: 0px;
-    position: relative;
-    top: -10%;
-    font-size: .3rem;
+  .blog-content p {
+    font-size: .5rem;
   }
 
   .blog-content .blog-author{
@@ -1268,15 +1319,18 @@ form {
 
   /* FAQ SECTION */
 
+  .faq-content h2{
+    font-size: .9rem;
+  }
 
   .faq-content h4 {
     margin-top: 1%;
-    font-size: .7rem;
+    font-size: .5rem;
   }
 
   .faq-content .question {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: .7rem;
     margin-top: 2%;
   }
 
@@ -1307,14 +1361,57 @@ form {
 
   /* footer-section */
 
-  .footer-left .list-items {
-    font-size: .8rem;
-    padding-right: 30px;
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  
+  .footer-logo{
+      width: 30%;
+      margin: 0 auto;
+    }
 
+  .footer-left .footer-logo,
+  .footer-logo-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10%;
+  }
+  
+  .footer-left .list,
+  .footer-right .logos-list {
+    list-style: none;
+  }
+  
+  .footer-left .list-items,
   .footer-right .list-items {
-    font-size: .8rem;
-    padding-left: 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  
+  .footer-left .list-items {
+    padding-right: 10px;
+    font-size: .7rem;
+  }
+  
+  .footer-right .list-items {
+    padding-left: 10px;
+    font-size: .7rem;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logos {
+    padding-left: 25px;
+    width: 30%;
+    margin: 10% 0;
+    margin-bottom: 0;
   }
 
 
