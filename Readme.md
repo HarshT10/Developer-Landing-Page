@@ -1,6 +1,6 @@
 # **Project 9 - Developer Landing Page**
 
-- This project is a landing page for web developers. 
+- This project is a landing page for web developers. It is Fully Responsive.
 
 [Netlify](https://developer-landing-page-harshcodes.netlify.app/)
 
